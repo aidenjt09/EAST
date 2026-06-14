@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — EAST Aquatics</title>
+  <meta name="description" content="Photos from EAST Aquatics practices, competitions, and team events.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+
+<nav class="nav scrolled" id="nav">
+  <div class="wrap"><div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.svg" alt="EAST Aquatics" class="nav-logo-img">
+      <div class="nav-logo-text"><span class="logo-super">Elite Aquatics</span><span class="logo-main">Sports <em>Team</em></span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="programs.html">Programs</a><a href="schedule.html">Schedule</a>
+      <a href="coaches.html">Coaches</a><a href="gallery.html" class="active">Gallery</a><a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta"><a href="register.html" class="btn btn-gold">Join the Team →</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="programs.html">Programs</a><a href="schedule.html">Schedule</a>
+  <a href="coaches.html">Coaches</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  <a href="register.html" class="btn btn-gold btn-lg">Join the Team →</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-glow"></div>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Gallery</span></div>
+    <h1>Life at EAST.</h1>
+    <p>Practices, competition days, team events, and the moments in between. Photos contributed by our athletes and families.</p>
+  </div>
+</div>
+<div class="page-wave" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,0 L0,0 Z" fill="#0A1628"/>
+  </svg>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <!-- Info banner -->
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.25rem 1.75rem;display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem" class="gs">
+      <svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" width="20" height="20" style="flex-shrink:0"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <p style="margin:0;font-size:0.9rem">Photos coming soon — we're building our gallery. <a href="contact.html" style="color:var(--blue);font-weight:600">Have a photo to share? Send it our way.</a></p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-row gs">
+      <button class="filter-btn active" data-filter="all">All Photos</button>
+      <button class="filter-btn" data-filter="team">Team &amp; Practice</button>
+      <button class="filter-btn" data-filter="competition">Competition</button>
+      <button class="filter-btn" data-filter="events">Events &amp; Awards</button>
+      <button class="filter-btn" data-filter="behind">Behind the Scenes</button>
+    </div>
+
+    <!-- Masonry grid -->
+    <div class="masonry" id="masonryGrid">
+      <div class="masonry-item" data-cat="team"><div class="gc-inner ph-1 ph-wide"><div class="gc-lanes"></div></div><div class="gc-label">Team Practice</div></div>
+      <div class="masonry-item" data-cat="competition"><div class="gc-inner ph-2 ph-tall"><div class="gc-lanes"></div></div><div class="gc-label">Competition</div></div>
+      <div class="masonry-item" data-cat="team"><div class="gc-inner ph-3 ph-sq"><div class="gc-lanes"></div></div><div class="gc-label">Practice</div></div>
+      <div class="masonry-item" data-cat="events"><div class="gc-inner ph-4 ph-wide"><div class="gc-lanes"></div></div><div class="gc-label">Awards Night</div></div>
+      <div class="masonry-item" data-cat="competition"><div class="gc-inner ph-5 ph-tall"><div class="gc-lanes"></div></div><div class="gc-label">Race Day</div></div>
+      <div class="masonry-item" data-cat="behind"><div class="gc-inner ph-2 ph-wide"><div class="gc-lanes"></div></div><div class="gc-label">Behind the Scenes</div></div>
+      <div class="masonry-item" data-cat="team"><div class="gc-inner ph-1 ph-tall"><div class="gc-lanes"></div></div><div class="gc-label">Dryland Training</div></div>
+      <div class="masonry-item" data-cat="competition"><div class="gc-inner ph-3 ph-wide"><div class="gc-lanes"></div></div><div class="gc-label">Sectionals</div></div>
+      <div class="masonry-item" data-cat="events"><div class="gc-inner ph-5 ph-sq"><div class="gc-lanes"></div></div><div class="gc-label">Team Banquet</div></div>
+      <div class="masonry-item" data-cat="behind"><div class="gc-inner ph-4 ph-tall"><div class="gc-lanes"></div></div><div class="gc-label">Coach Corner</div></div>
+      <div class="masonry-item" data-cat="team"><div class="gc-inner ph-2 ph-wide"><div class="gc-lanes"></div></div><div class="gc-label">Morning Practice</div></div>
+      <div class="masonry-item" data-cat="competition"><div class="gc-inner ph-1 ph-sq"><div class="gc-lanes"></div></div><div class="gc-label">Relay Team</div></div>
+      <div class="masonry-item" data-cat="events"><div class="gc-inner ph-3 ph-tall"><div class="gc-lanes"></div></div><div class="gc-label">End of Season</div></div>
+      <div class="masonry-item" data-cat="team"><div class="gc-inner ph-5 ph-wide"><div class="gc-lanes"></div></div><div class="gc-label">Stroke Clinic</div></div>
+      <div class="masonry-item" data-cat="behind"><div class="gc-inner ph-4 ph-sq"><div class="gc-lanes"></div></div><div class="gc-label">Meet Setup</div></div>
+    </div>
+
+    <!-- Share CTA -->
+    <div style="margin-top:5rem;background:var(--navy);border-radius:var(--r-xl);padding:3rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap" class="gs">
+      <div>
+        <h3 style="color:white;font-size:1.75rem;margin-bottom:0.5rem">Have a photo to share?</h3>
+        <p style="color:rgba(255,255,255,0.5);margin:0">Send your photos to the team — we love featuring our athletes and families.</p>
+      </div>
+      <a href="contact.html" class="btn btn-gold btn-lg" style="flex-shrink:0">Send Photos →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="assets/logo.svg" alt="EAST Aquatics" class="footer-logo-img"><p>Developing competitive swimmers and building character — one athlete at a time — in Yorba Linda, California.</p><div class="footer-usa"><span class="footer-usa-dot"></span>USA Swimming Member Club</div></div>
+      <div class="footer-col"><h5>Navigation</h5><ul><li><a href="index.html">Home</a></li><li><a href="programs.html">Programs</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="coaches.html">Coaches</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Programs</h5><ul><li><a href="programs.html#foundations">East Foundations (6–10)</a></li><li><a href="programs.html#agegroup">East Age Group (11–14)</a></li><li><a href="programs.html#senior">East Senior (15+)</a></li><li><a href="register.html">Free Evaluation Swim</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="mailto:[email]">[email@eastaquatics.com]</a></li><li><a href="tel:[phone]">[(XXX) XXX-XXXX]</a></li><li><a href="contact.html">Contact Form</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2025 Elite Aquatics Sports Team. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script>
+(function(){
+  gsap.registerPlugin(ScrollTrigger);
+  const lenis = new Lenis({ lerp: 0.08 });
+  (function raf(t){ lenis.raf(t); requestAnimationFrame(raf); })(0);
+  const bar = document.getElementById('progressBar');
+  window.addEventListener('scroll',()=>{ bar.style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+'%'; },{passive:true});
+  document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileNav').classList.toggle('open'));
+  document.querySelectorAll('#mobileNav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobileNav').classList.remove('open')));
+  document.querySelectorAll('.gs').forEach(el=>{
+    gsap.set(el,{opacity:0,y:28});
+    gsap.to(el,{opacity:1,y:0,duration:0.85,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',once:true}});
+  });
+  // Filter
+  document.querySelectorAll('.filter-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      const f=btn.dataset.filter;
+      document.querySelectorAll('.masonry-item').forEach(item=>{
+        item.style.display=(f==='all'||item.dataset.cat===f)?'':'none';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

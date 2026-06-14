@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule — EAST Aquatics</title>
+  <meta name="description" content="EAST Aquatics practice schedule and competition calendar. Add to Google Calendar or Apple Calendar.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+
+<nav class="nav scrolled" id="nav">
+  <div class="wrap"><div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.svg" alt="EAST Aquatics" class="nav-logo-img">
+      <div class="nav-logo-text"><span class="logo-super">Elite Aquatics</span><span class="logo-main">Sports <em>Team</em></span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="programs.html">Programs</a><a href="schedule.html" class="active">Schedule</a>
+      <a href="coaches.html">Coaches</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta"><a href="register.html" class="btn btn-gold">Join the Team →</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="programs.html">Programs</a><a href="schedule.html">Schedule</a>
+  <a href="coaches.html">Coaches</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+  <a href="register.html" class="btn btn-gold btn-lg">Join the Team →</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-glow"></div>
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Schedule</span></div>
+    <h1>Practice &amp; Competition Schedule.</h1>
+    <p>Weekly practice times for all training groups, plus our full competition calendar — add it straight to your phone.</p>
+  </div>
+</div>
+<div class="page-wave" aria-hidden="true">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,0 L0,0 Z" fill="#0A1628"/>
+  </svg>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <!-- Practice schedule -->
+    <div class="section-header gs" style="margin-bottom:2.5rem">
+      <div class="section-lead">Weekly Practice</div>
+      <h2>Who practices when.</h2>
+    </div>
+    <div class="gs schedule-table-wrap" style="--delay:0.1s;overflow:hidden;border-radius:var(--r-xl);border:1px solid var(--border)">
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Group</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="group-chip chip-foundations">East Foundations</span></td>
+            <td>4:30–5:30pm</td>
+            <td>—</td>
+            <td>4:30–5:30pm</td>
+            <td>—</td>
+            <td>4:30–5:30pm</td>
+            <td>8:00–9:00am</td>
+          </tr>
+          <tr>
+            <td><span class="group-chip chip-agegroup">East Age Group</span></td>
+            <td>4:00–5:45pm</td>
+            <td>4:00–5:45pm</td>
+            <td>4:00–5:45pm</td>
+            <td>4:00–5:45pm</td>
+            <td>4:00–5:45pm</td>
+            <td>7:00–9:00am</td>
+          </tr>
+          <tr>
+            <td><span class="group-chip chip-senior">East Senior</span></td>
+            <td>5:30–7:30am<br>4:00–6:00pm</td>
+            <td>5:30–7:30am<br>4:00–6:00pm</td>
+            <td>5:30–7:30am<br>4:00–6:00pm</td>
+            <td>5:30–7:30am<br>4:00–6:00pm</td>
+            <td>5:30–7:30am<br>4:00–6:00pm</td>
+            <td>6:00–8:30am</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.82rem;color:var(--text-3);margin-top:1rem" class="gs">* Schedule subject to change. Check the live calendar below for holidays and meet blackout dates.</p>
+
+    <!-- Google Calendar -->
+    <div style="margin-top:5rem" class="gs">
+      <div class="section-header" style="margin-bottom:2.5rem">
+        <div class="section-lead">Live Calendar</div>
+        <h2>Full competition calendar.</h2>
+        <p>All practices, meets, and team events in one place. Subscribe to get automatic updates on your phone.</p>
+      </div>
+
+      <!-- Calendar embed placeholder -->
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);overflow:hidden;min-height:500px;display:flex;flex-direction:column">
+        <div style="padding:2rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+          <div>
+            <div style="font-weight:600;color:var(--text-1);margin-bottom:0.25rem">EAST Aquatics Team Calendar</div>
+            <div style="font-size:0.85rem;color:var(--text-3)">Subscribe to get updates automatically</div>
+          </div>
+          <div class="cal-btns" style="justify-content:flex-start">
+            <a href="#" class="btn btn-blue">+ Add to Google Calendar</a>
+            <a href="#" class="btn btn-outline">Apple / Outlook (.ics)</a>
+          </div>
+        </div>
+        <!-- PASTE YOUR GOOGLE CALENDAR EMBED SRC HERE:
+             1. Go to calendar.google.com → Settings for your calendar
+             2. Scroll to "Integrate calendar" → copy the Embed code's src URL
+             3. Replace the div below with:
+                <iframe src="YOUR_CALENDAR_SRC" style="border:0;width:100%;height:600px" frameborder="0" scrolling="no"></iframe>
+        -->
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:3rem;text-align:center;min-height:400px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--text-3)" stroke-width="1.5" width="48" height="48"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <div style="font-weight:600;color:var(--text-2)">Google Calendar Coming Soon</div>
+          <p style="font-size:0.875rem;color:var(--text-3);max-width:360px;margin:0">Once the team calendar is set up, it will appear here — and you can subscribe directly to your phone or computer calendar.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upcoming meets list -->
+    <div style="margin-top:5rem">
+      <div class="section-header gs" style="margin-bottom:2.5rem">
+        <div class="section-lead">Upcoming Meets</div>
+        <h2>Competition calendar.</h2>
+      </div>
+      <div class="meets-list gs" style="--delay:0.1s">
+        <div class="meet-item"><div class="meet-date"><div class="meet-month">Jan</div><div class="meet-day">18</div></div><div class="meet-divider"></div><div class="meet-info"><div class="meet-name">[Meet Name] Invitational</div><div class="meet-where"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>[Pool Name], [City]</div></div><span class="meet-chip chip-open">Open</span></div>
+        <div class="meet-item"><div class="meet-date"><div class="meet-month">Feb</div><div class="meet-day">08</div></div><div class="meet-divider"></div><div class="meet-info"><div class="meet-name">[Meet Name] Championship</div><div class="meet-where"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>[Pool Name], [City]</div></div><span class="meet-chip chip-invite">Invite Only</span></div>
+        <div class="meet-item"><div class="meet-date"><div class="meet-month">Mar</div><div class="meet-day">22</div></div><div class="meet-divider"></div><div class="meet-info"><div class="meet-name">Southern California Sectionals</div><div class="meet-where"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>[Venue], [City]</div></div><span class="meet-chip chip-usas">USAS</span></div>
+        <div class="meet-item"><div class="meet-date"><div class="meet-month">Apr</div><div class="meet-day">12</div></div><div class="meet-divider"></div><div class="meet-info"><div class="meet-name">[Meet Name] Open Water</div><div class="meet-where"><svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>[Location]</div></div><span class="meet-chip chip-open">Open</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="assets/logo.svg" alt="EAST Aquatics" class="footer-logo-img"><p>Developing competitive swimmers and building character — one athlete at a time — in Yorba Linda, California.</p><div class="footer-usa"><span class="footer-usa-dot"></span>USA Swimming Member Club</div></div>
+      <div class="footer-col"><h5>Navigation</h5><ul><li><a href="index.html">Home</a></li><li><a href="programs.html">Programs</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="coaches.html">Coaches</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Programs</h5><ul><li><a href="programs.html#foundations">East Foundations (6–10)</a></li><li><a href="programs.html#agegroup">East Age Group (11–14)</a></li><li><a href="programs.html#senior">East Senior (15+)</a></li><li><a href="register.html">Free Evaluation Swim</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="mailto:[email]">[email@eastaquatics.com]</a></li><li><a href="tel:[phone]">[(XXX) XXX-XXXX]</a></li><li><a href="contact.html">Contact Form</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2025 Elite Aquatics Sports Team. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script>
+(function(){
+  gsap.registerPlugin(ScrollTrigger);
+  const lenis = new Lenis({ lerp: 0.08 });
+  (function raf(t){ lenis.raf(t); requestAnimationFrame(raf); })(0);
+  const bar = document.getElementById('progressBar');
+  window.addEventListener('scroll',()=>{ bar.style.width=(scrollY/(document.body.scrollHeight-innerHeight)*100)+'%'; },{passive:true});
+  document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileNav').classList.toggle('open'));
+  document.querySelectorAll('#mobileNav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobileNav').classList.remove('open')));
+  document.querySelectorAll('.gs').forEach(el=>{
+    const delay=parseFloat(el.style.getPropertyValue('--delay'))||0;
+    gsap.set(el,{opacity:0,y:28});
+    gsap.to(el,{opacity:1,y:0,duration:0.85,delay,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%',once:true}});
+  });
+})();
+</script>
+</body>
+</html>
